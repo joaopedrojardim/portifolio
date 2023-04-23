@@ -1,0 +1,278 @@
+.projetos {
+  background: url('https://images.pexels.com/photos/1004665/pexels-photo-1004665.jpeg?cs=srgb&dl=pexels-eberhard-grossgasteiger-1004665.jpg&fm=jpg') no-repeat center center;
+  background-size: cover; 
+  position: relative;
+  padding-top: 100px;
+  padding-bottom: 50px;
+  background-color: #eee;
+}
+
+.projetos ul {
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+}
+
+.projetos img {
+  display: block;
+  max-width: 100%;
+}
+
+.projetos .slide li >div{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    background-color: #fff;
+    grid-template-columns: 3fr 5fr;
+}
+
+.projetos .slide .fotos{
+  display: flex;
+  flex-direction: column;
+
+}
+
+.projetos .slide .descricao{
+  box-sizing: border-box;
+  padding: 20px 30px 20px 40px;
+  position: relative;
+}
+
+.projetos .slide .descricao div{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.projetos .slide .descricao div span{
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+}
+
+.projetos .slide .descricao p{
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.3;
+  margin-top: 8px;
+  margin-bottom: 10px;
+}
+
+.projetos .slide .descricao ul{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.projetos .slide .descricao .tecnologias li{
+  box-sizing: content-box;
+  padding: 5px 10px;
+  background-color: #b6b6b6;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  color: white;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+.projetos .slide .descricao .links{
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+
+.projetos .slide .descricao .links li{
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.projetos .slide .descricao .links a{
+  text-decoration: none;
+}
+
+.projetos .slide .descricao .links img{
+  max-width: 100%;
+}
+
+.projetos .slide .descricao .links i{
+  font-size: 32px;
+  color: rgb(112, 112, 112);
+}
+
+.projetos .slide li div .fotos img{
+  height: 50%;
+  object-fit: cover;
+}
+
+.projetos .slide-wrapper {
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 750px){
+  .projetos .slide li >div{
+    height: 400px;
+    grid-template-columns: 1fr;
+  }
+
+  .projetos .slide .fotos{
+    flex-direction: row;
+    height: 100%;
+  }
+  
+  .projetos .slide .descricao{
+    position: initial;
+    grid-row: 1/-1;
+
+  }
+
+  .projetos .slide .descricao p span{
+    display: none;
+  }
+
+  .projetos .slide li div .fotos img{
+    height: 100%;
+  }
+  .projetos .slide li div .fotos img:nth-child(1){
+    display: none;
+  }
+
+  .projetos .slide .descricao .links i{
+    font-size: 20px;
+  }
+
+  .projetos .slide .descricao .links{
+    bottom: 10px;
+    right: 10px;
+  }
+}
+
+@media (max-width: 430px){
+  .projetos .slide .descricao > h3{
+    display: none !important;
+  }
+
+  .projetos .slide .descricao .tecnologias{
+    display: none;
+  }
+
+  .projetos .slide .descricao div span{
+    display: none;
+  }
+}
+
+
+
+.projetos .slide {
+  display: flex;
+}
+
+.projetos .slide:hover {
+  will-change: transform;
+}
+
+.projetos .slide > li {
+  flex-shrink: 0;
+  width: 80vw;
+  max-width: 800px;
+  margin: 0 20px;
+
+  border-radius: 4px;
+  overflow: hidden;
+  opacity: 0;
+  transform: scale(0.8);
+  transition: 0.4s;
+}
+
+.projetos .slide li.active {
+  opacity: 1;
+  transform: scale(1);
+}
+
+[data-control="slide"] {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+[data-control="slide"] li a {
+  display: block;
+  width: 12px;
+  height: 12px;
+  background: #fb5;
+  border-radius: 50%;
+  overflow: hidden;
+  text-indent: -999px;
+  margin: 5px;
+}
+
+[data-control="slide"] li.active a,
+[data-control="slide"] li a:hover {
+  background: #e54;
+}
+
+.custom-controls {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.projetos .custom-controls li {
+  opacity: 0.8;
+  transform: scale(0.8);
+  width: 20px;
+  height: 20px;
+  margin: 2px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
+  transition: 0.3s;
+  background-color: #ffffff83;
+}
+
+.projetos .custom-controls li.active {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.projetos .arrow-nav {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -100%);
+}
+
+.projetos .arrow-nav button {
+  cursor: pointer;
+  border: none;
+  border-radius: 100%;
+  color: white;
+  width: 50px;
+  height: 50px;
+  background: #ddd url("../assets/icons/arrow.svg") center center no-repeat;
+}
+
+@media (max-width: 1300px){
+
+  .projetos .arrow-nav {
+    width: 90%;
+  }
+
+  .projetos .arrow-nav button {
+    width: 40px;
+    height: 40px;
+  }
+  
+}
+
+@media (max-width: 750px){
+  .projetos .arrow-nav{
+    display: none;
+  }
+}
+
+.projetos .arrow-nav button.prev {
+  transform: rotate(-180deg);
+}

@@ -1,0 +1,72 @@
+[
+    {
+        "curso" : "JavaScript Completo ES6",
+        "emissor" : "Origamid",
+        "conclusao": "04/2023", 
+        "carga" : 74, 
+        "tipo": "JavaScript"
+    }, 
+    {
+        "curso" : "CodeCamp JavaScript",
+        "emissor" : "DIO",
+        "conclusao": "03/2023", 
+        "carga" : 14, 
+        "tipo": "JavaScript"
+    }, 
+    {
+        "curso" : "HTML e CSS para Iniciantes",
+        "emissor" : "Origamid",
+        "conclusao": "02/2023", 
+        "carga" : 46, 
+        "tipo": "CSS"
+    }, 
+    {
+        "curso" : "Bootcamp Linux",
+        "emissor" : "DIO",
+        "conclusao": "2/2023", 
+        "carga" : 44, 
+        "tipo": "Linux"
+    },
+    {
+        "curso" : "UI Design para Iniciantes",
+        "emissor" : "Origamid",
+        "conclusao": "2/2023", 
+        "carga" : 34, 
+        "tipo": "UI"
+    }, 
+    {
+        "curso" : "Gestão Ágil com Scrum",
+        "emissor" : "Udemy",
+        "conclusao": "01/2023", 
+        "carga" : 6.5, 
+        "tipo": "Gestão"
+    }, 
+    {
+        "curso" : "Intro. à Gestão de Projetos",
+        "emissor" : "Fundação Bradesco",
+        "conclusao": "01/2023", 
+        "carga" : 10, 
+        "tipo": "Gestão"
+    }, 
+    {
+        "curso" : "Intro. a Redes de Computadores",
+        "emissor" : "Fundação Bradesco",
+        "conclusao": "01/2022", 
+        "carga" : 15, 
+        "tipo": "Redes"
+    },
+    {
+        "curso" : "Fund. do Design Gráfico",
+        "emissor" : "Fundação Bradesco",
+        "conclusao": "05/2020", 
+        "carga" : 6.5, 
+        "tipo": "UI"
+    },
+    {
+        "curso" : "Fund. de Lógica de programação",
+        "emissor" : "Fundação Bradesco",
+        "conclusao": "06/2020", 
+        "carga" : 6.5, 
+        "tipo": "Lógica"
+    }
+]

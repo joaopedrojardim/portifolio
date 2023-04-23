@@ -1,0 +1,31 @@
+footer{
+    background-color: #111;
+}
+
+.contato{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px 0 20px 20px;
+}
+
+.contato h2{
+    color: #eee;
+}
+
+.contato ul{
+    margin: 0;
+}
+
+.contato li{
+    list-style: none;
+    color: #ddd;
+    font-family: 'Roboto';
+    margin: 10px;
+}
+
+.contato a{
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff;
+}

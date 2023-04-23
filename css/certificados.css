@@ -1,0 +1,86 @@
+.certificados-container{
+    background-color: #eee;
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+.certificados{
+    width: 95%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.certificados h2{
+    grid-column: 1/-1;
+    margin: 10px;
+    margin-left: 20px;
+}
+
+.certificados .certificado{
+    padding: 20px;
+    background-color: #efefef;
+    box-shadow: 1px 1px 20px rgba(0, 0, 0, .1);
+    transition: .6s;
+}
+
+.certificados .certificado:hover{
+    padding: 16px;
+    box-shadow: inset 2px 2px 10px rgba(0, 0, 0, .1);
+    transition: .6s;
+}
+
+/* caso queira representar cor nos certificados */
+/* .certificados .certificado div div{
+    height: 10px;
+    width: 10px;
+    border-radius: 100%;
+    display: flex;
+} */
+
+.certificados .certificado h4{
+    font-size: 18px;
+}
+
+.certificados .certificado > div{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding-bottom: 5px;
+    /* border-bottom: 2px solid rgb(218, 218, 218); */
+    margin-bottom: 0px;
+}
+
+.certificados .certificado span{
+    font-family: 'Roboto';
+    font-weight: 500;
+    display: block;
+    color: #222;
+}
+
+.certificados .certificado span:nth-child(2){
+    font-weight: 800;
+    color: #333;
+}
+
+.certificados .certificado span:nth-child(3){
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.certificados .certificado span:nth-child(4){
+    color: #333;
+}
+
+@media (max-width: 850px){
+    .certificados{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 550px){
+    .certificados{
+        grid-template-columns: 1fr;
+    }
+}
