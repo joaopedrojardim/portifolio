@@ -1,7 +1,7 @@
-export default function initCriarCertificados(){
+export default function initCriarCertificados(url){
     const certificados = document.querySelector(".certificados")
 
-    fetch("./../../certificados.json").then(r => r.json()).then(body =>{
+    fetch(url).then(r => r.json()).then(body =>{
         body.forEach(item =>{
             criarCertificado(item.curso, item.emissor, item.conclusao, item.carga, item.tipo)
         })

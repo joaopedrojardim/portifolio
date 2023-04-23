@@ -5,7 +5,7 @@ import initScrollSuave from "./modules/scroll-suave.js";
 import SlideNav from "./modules/slide.js";
 
 initSobreMim()
-initCriarCertificados()
+initCriarCertificados('./certificados.json')
 initScrollSuave()
 initHome()
 
