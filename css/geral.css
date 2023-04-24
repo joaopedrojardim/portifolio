@@ -3,7 +3,14 @@ body{
     padding: 0;   
 }
 
-h2, h3, h4{
+h2{
+    margin: 0;
+    padding: 0;
+    font-family: 'Sriracha';
+    color: #666;
+}
+
+h3, h4{
     margin: 0;
     padding: 0;
     font-family: 'Poppins';
