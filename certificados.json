@@ -1,5 +1,12 @@
 [
     {
+        "curso" : "BootCamp Angular",
+        "emissor" : "DIO",
+        "conclusao": "05/2023", 
+        "carga" : 75, 
+        "tipo": "Angular"
+    },
+    {
         "curso" : "JavaScript Completo ES6",
         "emissor" : "Origamid",
         "conclusao": "04/2023", 
