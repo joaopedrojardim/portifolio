@@ -1,5 +1,12 @@
 [
     {
+        "curso" : "Gestão Ágil: Scrum, Kanban & Nexus",
+        "emissor" : "DIO",
+        "conclusao": "05/2023", 
+        "carga" : 75, 
+        "tipo": "Angular"
+    },
+    {
         "curso" : "Bootcamp Angular",
         "emissor" : "DIO",
         "conclusao": "05/2023", 
